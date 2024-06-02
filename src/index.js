@@ -22,10 +22,6 @@ const client = new Client({
     ]
 })
 
-if (!config.TOKEN) {
-    console.log("[WARN] Token for discord bot is required! put your token in config file".yellow.bold + "\n")
-    return process.exit();
-};
 
 client.commands = new Collection()
 client.events = new Collection()
@@ -39,7 +35,7 @@ module.exports = client;
     require(`./handlers/${file}`)(client);
 });
 
-client.login(config.TOKEN)
+client.login(process.env.TOKEN)
     .catch((err) => {
         console.log("[CRUSH] Something went wrong while connecting to your bot" + "\n");
         console.log("[CRUSH] Error from DiscordAPI :" + err);
