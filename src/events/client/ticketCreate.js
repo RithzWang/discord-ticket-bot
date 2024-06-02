@@ -106,7 +106,7 @@ client.on("interactionCreate", async (interaction) => {
                     },
                     {
                         id:
-interaction.guild.roles.cache.get('1167046828190085170', '1168598936630599710'),
+interaction.guild.roles.cache.get['1167046828190085170', '1168598936630599710'],
                         allow:
 ['ManageChannels']
                     },
