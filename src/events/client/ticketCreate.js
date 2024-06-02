@@ -57,7 +57,7 @@ client.on("interactionCreate", async (interaction) => {
                 components: [row]
             })
             
-            await channel.setName(`close-${user.user.discriminator}`)
+            await channel.delete()
             channel.permissionOverwrites.edit(user, {
                 ViewChannel: false
             }).then(() => {
