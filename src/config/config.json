@@ -1,4 +1,4 @@
-module.exports = {
+{
     TOKEN: process.env.TOKEN,
     CLIENTID: "1246464221764386937",
     OWNER: ["837741275603009626"]
