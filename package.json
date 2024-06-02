@@ -2,7 +2,11 @@
   "dependencies": {
     "colors": "^1.4.0",
     "common-tags": "^1.8.2",
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "moment-timezone": "^0.5.43",
+    "ms": "^2.1.3",
+    "node-fetch": "^3.3.2",
+    "pretty-ms": "^7.0.1"
   },
   "name": "ticket-bot-discord.js",
   "version": "1.0.0",
@@ -20,10 +24,6 @@
     "ticket",
     "discord",
     "discord-bot",
-    "moment-timezone",
-    "ms",
-    "node-fetch",
-    "pretty-ms",
     "youtube-tutorial",
     "open-source"
   ],
