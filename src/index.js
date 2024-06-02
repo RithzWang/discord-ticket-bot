@@ -1,6 +1,5 @@
 require('./console/watermark')
 const { Client, Partials, Collection } = require('discord.js');
-Discord.Constants.DefaultOptions.ws.properties.$browser = "Discord Android";
 const colors = require('colors');
 const config = require('./config/config.json')
 
