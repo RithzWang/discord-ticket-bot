@@ -20,6 +20,10 @@
     "ticket",
     "discord",
     "discord-bot",
+    "moment-timezone",
+    "ms",
+    "node-fetch",
+    "pretty-ms",
     "youtube-tutorial",
     "open-source"
   ],
