@@ -105,6 +105,12 @@ client.on("interactionCreate", async (interaction) => {
                         deny: ['ViewChannel'],
                     },
                     {
+                        id:
+interaction.guild.roles.cache.get('1167046828190085170', '1168598936630599710'),
+                        allow:
+['ManageChannels']
+                    },
+                    {
                         id: client.user.id,
                         allow: ['ManageChannels']
                     }
