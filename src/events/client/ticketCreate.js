@@ -105,10 +105,10 @@ client.on("interactionCreate", async (interaction) => {
                         deny: ['ViewChannel'],
                     },
                     {
-                        interaction.guild.roles.cache.filter(role => ['1167046828190085170', '1168598936630599710'].includes(role.id)).map(role => ({
-  id: role.id,
-  allow: ['ManageChannels']
-}))
+                        id:
+interaction.guild.roles.cache.get['1167046828190085170','1168598936630599710'],
+                        allow:
+['ViewChannel']
                     },
                     {
                         id: client.user.id,
