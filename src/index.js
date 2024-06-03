@@ -3,7 +3,6 @@ const { Client, Partials, Collection } = require('discord.js');
 const colors = require('colors');
 const config = require('./config/config.json')
 
-const keep_alive = require('./keep_alive.js')
 
 const client = new Client({
     intents: [
