@@ -57,32 +57,7 @@ client.on("interactionCreate", async (interaction) => {
                 components: [row]
             })
             
-            await channel.delete()
-            channel.permissionOverwrites.edit(user, {
-                ViewChannel: false
-            }).then(() => {
-                const row = new ActionRowBuilder()
-                    .addComponents(
-                        new ButtonBuilder()
-                            .setCustomId('-')
-                            .setLabel("🔒 Closed")
-                            .setStyle(ButtonStyle.Secondary)
-                            .setDisabled(true)
-                    )
-                const embed = new EmbedBuilder()
-                    .setTitle(`Closed Ticket`)
-                    .setDescription(`The ticket has been closed successfully!`)
-                    .setColor("#2f3136")
-                    .setTimestamp()
-                return interaction.channel.send({
-                    embeds: [embed],
-                    components: [row]
-                });
-            }).catch(error => {
-                console.error(error);
-            });
-        }
-    }
+            await channel.delete()
 
     if (interaction.isModalSubmit()) {
         if (interaction.customId.startsWith(`modal-${interaction.guild.id}`)) {
